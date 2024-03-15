@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <div class="container mt-5">
+        <h1 th:text="${title}" />
+    </div>
+    <main class="container mt-10">
+        <p>
+            This blog was created by Anastasiia Samoilova.
+        </p>
+        <p>
+            Email: aanast.sa00@gmail.com
+        </p>
+        <p>
+            Spring, MySql were used in developing.
+        </p>
+    </main>
+
+    <header th:insert="blocks/footer :: footer"></header>
+</body>
+</html>
+
